@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <div class="card">
             <h1>Entrar</h1>
             <div class="label-float">
-                <input type="text" name="username" id="username" placeholder="">
+                <input type="text" name="username" id="username" placeholder="" required>
                 <label for="username">Usuário</label>
             </div>
             <div class="label-float">
-                <input type="password" name="password" id="password" placeholder="">
+                <input type="password" name="password" id="password" placeholder="" required>
                 <label for="password">Senha</label>
+                <i id="verConfirmPassword" class="fa-regular fa-eye"></i>
             </div>
             <div class="justify-center">
                 <button>Entrar</button>
@@ -28,5 +30,6 @@
             <p>Não tem uma conta? <a href="pagcadastro.html">Cadastre-se</a></p>
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>

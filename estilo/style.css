@@ -61,7 +61,8 @@ h1{
     margin-top: 13px;
     transition: all .3s ease-in-out;
 }
-.label-float input:focus + label{
+.label-float input:focus + label,
+.label-float input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: #B1345C;
@@ -108,4 +109,10 @@ a:hover{
     text-decoration: underline;
     color: #16263F;
 }
-
+.fa-eye{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+    color:#16263F ;
+}

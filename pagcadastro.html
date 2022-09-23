@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="estilo/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -13,23 +14,25 @@
             <h1>Cadastrar</h1>
 
             <div class="label-float">
-                <input type="text" name="name" id="name" placeholder="">
+                <input type="text" name="name" id="name" placeholder="" required>
                 <label for="name">Nome</label>
             </div>
 
             <div class="label-float">
-                <input type="text" name="username" id="username" placeholder="">
+                <input type="text" name="username" id="username" placeholder="" required>
                 <label for="username">Usuário</label>
             </div>
 
             <div class="label-float">
-                <input type="password" name="password" id="password" placeholder="">
+                <input type="password" name="password" id="password" placeholder="" required>
                 <label for="password">Senha</label>
+                <i id="verSenha" class="fa-regular fa-eye"></i>
             </div>
 
             <div class="label-float">
-                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="">
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="" required>
                 <label for="confirmpassword">Confirmar senha</label>
+                <i id="verConfirmPassword" class="fa-regular fa-eye"></i>
             </div>
 
             <div class="justify-center">
@@ -37,5 +40,6 @@
             </div>
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
